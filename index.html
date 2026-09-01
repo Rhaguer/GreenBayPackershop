@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Green & Gold Field Shop, demostración de una tienda de indumentaria para fanáticos del fútbol americano.">
+  <title>Green & Gold Field Shop | Fan Gear Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="notice">ENVÍO DEMO GRATIS SOBRE US$75 · CAMBIOS SIMPLIFICADOS</div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Green and Gold Field Shop"><span class="brand-mark">✦</span><span>GREEN <em>&amp;</em> GOLD<small>FIELD SHOP</small></span></a>
+    <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="mainNav">☰ <span>Menú</span></button>
+    <nav id="mainNav" class="main-nav" aria-label="Navegación principal">
+      <a href="#catalogo">Novedades</a><a href="#catalogo">Hombre</a><a href="#catalogo">Mujer</a><a href="#catalogo">Accesorios</a><a class="sale-link" href="#ofertas">Ofertas</a>
+    </nav>
+    <div class="header-actions"><button id="searchButton" aria-label="Buscar">⌕</button><button id="cartButton" aria-label="Ver carrito">Bolsa <b id="cartCount">0</b></button></div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-content"><p class="eyebrow">TEMPORADA DE PARTIDOS</p><h1>Vive cada jugada<br><span>con tu propio estilo.</span></h1><p>Ropa y accesorios en verde y dorado para la comunidad que vive el fútbol americano.</p><a class="button button-gold" href="#catalogo">Comprar colección</a></div>
+      <div class="hero-media" role="img" aria-label="Aficionados en un estadio de fútbol americano"></div>
+    </section>
+    <section class="category-strip" aria-label="Categorías destacadas"><a href="#catalogo">Polerones <span>→</span></a><a href="#catalogo">Poleras <span>→</span></a><a href="#catalogo">Gorros <span>→</span></a><a href="#catalogo">Día de partido <span>→</span></a></section>
+    <section class="collection shell" id="catalogo"><div class="section-heading"><div><p class="eyebrow">ELEGIDOS PARA LA HINCHADA</p><h2>Lo nuevo en la tienda</h2></div><button id="filterButton" class="text-button">Ver todo</button></div><div id="productGrid" class="product-grid"></div></section>
+    <section class="offer shell" id="ofertas"><div><p class="eyebrow">OFERTA DE LA SEMANA</p><h2>Hasta 30% menos<br>en esenciales de tribuna.</h2><p>Prepara el próximo partido con piezas cómodas y listas para regalar.</p><a class="button button-light" href="#catalogo">Ver ofertas</a></div><div class="offer-badge"><small>HASTA</small><b>30%</b><span>OFF</span></div></section>
+    <section class="story shell"><div class="story-image" role="img" aria-label="Balón y campo de fútbol americano"></div><div><p class="eyebrow">HECHO PARA LA COMUNIDAD</p><h2>Más que ropa.<br>Una forma de alentar.</h2><p>Una tienda demo inspirada en la energía de los días de partido: productos fáciles de combinar, comprar y regalar.</p><a class="text-button" href="#catalogo">Explorar catálogo →</a></div></section>
+  </main>
+  <footer><div class="shell footer-grid"><div><b>GREEN &amp; GOLD FIELD SHOP</b><p>Diseño demostrativo de tienda para fanáticos.</p></div><div><b>Compra</b><a href="#catalogo">Catálogo</a><a href="#ofertas">Ofertas</a></div><div><b>Ayuda</b><a href="#">Despacho demo</a><a href="#">Cambios demo</a></div></div><p class="disclaimer shell">Sitio conceptual no oficial. No está afiliado, patrocinado ni aprobado por Green Bay Packers, NFL ni sus propietarios.</p></footer>
+  <aside id="cartDrawer" class="cart-drawer" aria-label="Bolsa de compra" aria-hidden="true"><div class="cart-head"><h2>Tu bolsa</h2><button id="closeCart" aria-label="Cerrar">×</button></div><div id="cartItems"></div><div class="cart-total"><span>Subtotal demo</span><b id="cartTotal">US$0</b><button class="button button-gold">Ir a pago demo</button></div></aside><div id="cartShade" class="shade"></div>
+  <script src="app.js"></script>
+</body>
+</html>
