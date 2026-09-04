@@ -1,0 +1,8 @@
+{
+  "appId": "com.rhaguer.greenbaypackershop",
+  "appName": "Packers Shop Demo",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  }
+}
